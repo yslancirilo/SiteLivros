@@ -1,0 +1,29 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 16px 20px 40px;
+  width: 100%;
+  flex: 1;
+}
+
+.search-info {
+  font-size: 14px;
+  color: #565959;
+  margin-bottom: 12px;
+}
+
+.error-banner {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  color: #856404;
+  font-size: 14px;
+}

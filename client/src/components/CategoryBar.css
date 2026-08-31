@@ -1,0 +1,47 @@
+.category-bar {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.category-scroll {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 10px 0;
+  max-width: 1500px;
+  margin: 0 auto;
+  scrollbar-width: thin;
+}
+
+.category-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+.category-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 2px;
+}
+
+.cat-btn {
+  white-space: nowrap;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid #d5d9d9;
+  background: #f0f2f2;
+  color: #0f1111;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.cat-btn:hover {
+  background: #e3e6e6;
+  border-color: #adb1b8;
+}
+
+.cat-btn.active {
+  background: #131921;
+  color: #fff;
+  border-color: #131921;
+}
