@@ -5,6 +5,7 @@ import CategoryBar from "./components/CategoryBar.jsx";
 import BookGrid from "./components/BookGrid.jsx";
 import BookModal from "./components/BookModal.jsx";
 import Footer from "./components/Footer.jsx";
+import allBooks from "./data/books.js";
 import "./App.css";
 
 const WHATSAPP_NUMBER = "5531998092239"; 
@@ -18,39 +19,37 @@ export default function App() {
   const [error, setError] = useState(null);
   const [selectedBook, setSelectedBook] = useState(null);
 
-  // Fetch categories once
+  // Extrai categorias únicas dos dados locais
   useEffect(() => {
-    fetch("/api/categories")
-      .then((r) => {
-        if (!r.ok) throw new Error("Erro ao carregar categorias");
-        return r.json();
-      })
-      .then(setCategories)
-      .catch(console.error);
+    const unique = [...new Set(allBooks.map((b) => b.category))].sort();
+    setCategories(unique);
   }, []);
 
-  // Fetch books when search or category changes
+  // Filtra livros localmente quando busca ou categoria mudam
   const fetchBooks = useCallback(() => {
     setLoading(true);
     setError(null);
 
-    const params = new URLSearchParams();
-    if (searchTerm.trim()) params.set("search", searchTerm.trim());
-    if (activeCategory !== "Todos") params.set("category", activeCategory);
+    let result = [...allBooks];
 
-    fetch(`/api/books?${params.toString()}`)
-      .then((r) => {
-        if (!r.ok) throw new Error("Erro ao carregar livros");
-        return r.json();
-      })
-      .then((data) => {
-        setBooks(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setLoading(false);
-      });
+    if (activeCategory !== "Todos") {
+      result = result.filter(
+        (b) => b.category.toLowerCase() === activeCategory.toLowerCase()
+      );
+    }
+
+    if (searchTerm.trim()) {
+      const term = searchTerm.trim().toLowerCase();
+      result = result.filter(
+        (b) =>
+          b.title.toLowerCase().includes(term) ||
+          b.category.toLowerCase().includes(term) ||
+          b.description.toLowerCase().includes(term)
+      );
+    }
+
+    setBooks(result);
+    setLoading(false);
   }, [searchTerm, activeCategory]);
 
   useEffect(() => {
