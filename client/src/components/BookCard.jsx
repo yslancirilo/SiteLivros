@@ -18,7 +18,7 @@ export default function BookCard({ book, onBuyClick, onBookClick }) {
           <div className="img-fallback" aria-hidden="true">📖</div>
         ) : (
           <img
-            src={`/images/${encodeURIComponent(book.image)}`}
+            src={book.image}
             alt={`Capa do livro ${book.title}`}
             className="card-img"
             loading="lazy"

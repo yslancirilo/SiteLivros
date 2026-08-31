@@ -56,7 +56,7 @@ export default function BookModal({ book, onClose, onBuyClick }) {
               <div className="modal-img-fallback" aria-hidden="true">📖</div>
             ) : (
               <img
-                src={`/images/${encodeURIComponent(book.image)}`}
+                src={book.image}
                 alt={`Capa do livro ${book.title}`}
                 className="modal-img"
                 onError={() => setImgError(true)}
