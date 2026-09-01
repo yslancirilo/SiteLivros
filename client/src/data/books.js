@@ -1,10 +1,10 @@
-// Book catalog — prices and categories assigned to each title
+// Catálogo de livros — dados estáticos para o frontend
 const books = [
   // === Ficção / Aventura ===
   {
     id: 1,
     title: "Ladrão de Raios",
-    image: "Ladrao de Raios.jpeg",
+    image: "/imgLivros/Ladrao de Raios.jpeg",
     category: "Ficção / Aventura",
     price: 24.90,
     description: "Uma aventura épica misturando mitologia grega com o mundo moderno.",
@@ -13,7 +13,7 @@ const books = [
   {
     id: 2,
     title: "Enfrentando o Dragão",
-    image: "Enfrentando o Dragao.jpeg",
+    image: "/imgLivros/Enfrentando o Dragao.jpeg",
     category: "Ficção / Aventura",
     price: 24.90,
     description: "Uma jornada heroica cheia de coragem e fantasia.",
@@ -22,7 +22,7 @@ const books = [
   {
     id: 3,
     title: "O Resgate do Paladino",
-    image: "O resgate do paladino.jpeg",
+    image: "/imgLivros/O resgate do paladino.jpeg",
     category: "Ficção / Aventura",
     price: 22.90,
     description: "Uma missão de resgate em um mundo de fantasia medieval.",
@@ -31,7 +31,7 @@ const books = [
   {
     id: 4,
     title: "Crônicas de Chordata",
-    image: "Cronicas de Chordata.jpeg",
+    image: "/imgLivros/Cronicas de Chordata.jpeg",
     category: "Ficção / Aventura",
     price: 24.90,
     description: "Aventuras fascinantes no universo de Chordata.",
@@ -40,7 +40,7 @@ const books = [
   {
     id: 5,
     title: "O Enigma dos Dados",
-    image: "Enigma Dos Dados.jpeg",
+    image: "/imgLivros/Enigma Dos Dados.jpeg",
     category: "Ficção / Aventura",
     price: 24.90,
     description: "Um mistério envolvente que desafia a mente.",
@@ -49,7 +49,7 @@ const books = [
   {
     id: 6,
     title: "Sozinhos - Caçadores",
-    image: "Sozinhos - Cacadores.jpeg",
+    image: "/imgLivros/Sozinhos - Cacadores.jpeg",
     category: "Ficção / Aventura",
     price: 23.90,
     description: "Dois caçadores solitários enfrentam desafios inesperados.",
@@ -60,7 +60,7 @@ const books = [
   {
     id: 7,
     title: "TMJ - A Brigada dos Ossos",
-    image: "TMJ- A brigada dos Ossos.jpeg",
+    image: "/imgLivros/TMJ- A brigada dos Ossos.jpeg",
     category: "Série TMJ",
     price: 20.00,
     description: "Primeiro livro da emocionante série TMJ.",
@@ -69,7 +69,7 @@ const books = [
   {
     id: 8,
     title: "TMJ - A Brigada dos Ossos 2",
-    image: "TMJ- A brigada dos Ossos 2.jpeg",
+    image: "/imgLivros/TMJ- A brigada dos Ossos 2.jpeg",
     category: "Série TMJ",
     price: 20.00,
     description: "Continuação das aventuras da Brigada dos Ossos.",
@@ -78,7 +78,7 @@ const books = [
   {
     id: 9,
     title: "TMJ - Eu Sou Você",
-    image: "TMJ- Eu sou voce.jpeg",
+    image: "/imgLivros/TMJ- Eu sou voce.jpeg",
     category: "Série TMJ",
     price: 20.00,
     description: "Uma história de identidade e descobertas surpreendentes.",
@@ -87,7 +87,7 @@ const books = [
   {
     id: 10,
     title: "TMJ - Jogos Mortíferos",
-    image: "TMJ- Jogos Mortiferos.jpeg",
+    image: "/imgLivros/TMJ- Jogos Mortiferos.jpeg",
     category: "Série TMJ",
     price: 20.00,
     description: "Jogos perigosos onde nada é o que parece.",
@@ -96,7 +96,7 @@ const books = [
   {
     id: 11,
     title: "TMJ - Nosso Filhote",
-    image: "TMJ- Nosso filhote.jpeg",
+    image: "/imgLivros/TMJ- Nosso filhote.jpeg",
     category: "Série TMJ",
     price: 20.00,
     description: "Uma história emocionante sobre laços e lealdade.",
@@ -105,7 +105,7 @@ const books = [
   {
     id: 12,
     title: "TMJ - Caçadores de Android",
-    image: "TMJ_ Cacadores de Android.jpeg",
+    image: "/imgLivros/TMJ_ Cacadores de Android.jpeg",
     category: "Série TMJ",
     price: 20.00,
     description: "Ficção científica intensa no universo TMJ.",
@@ -116,7 +116,7 @@ const books = [
   {
     id: 13,
     title: "O Pequeno Príncipe",
-    image: "O Pequeno Principe.jpeg",
+    image: "/imgLivros/O Pequeno Principe.jpeg",
     category: "Literatura / Clássicos",
     price: 23.90,
     description: "O clássico atemporal de Antoine de Saint-Exupéry.",
@@ -125,7 +125,7 @@ const books = [
   {
     id: 14,
     title: "Fernão Capelo Gaivota",
-    image: "Fernão Capelo Gaivota.jpeg",
+    image: "/imgLivros/Fernão Capelo Gaivota.jpeg",
     category: "Literatura / Clássicos",
     price: 18.90,
     description: "A fábula inspiradora sobre liberdade e perfeição.",
@@ -134,7 +134,7 @@ const books = [
   {
     id: 15,
     title: "O Cão dos Baskervilles",
-    image: "O cao dos Baskervilles.jpeg",
+    image: "/imgLivros/O cao dos Baskervilles.jpeg",
     category: "Literatura / Clássicos",
     price: 21.90,
     description: "O famoso caso de Sherlock Holmes com o misterioso cão.",
@@ -143,7 +143,7 @@ const books = [
   {
     id: 16,
     title: "Marília de Dirceu",
-    image: "Marilia de disceu.jpeg",
+    image: "/imgLivros/Marilia de disceu.jpeg",
     category: "Literatura / Clássicos",
     price: 17.90,
     description: "Obra poética clássica da literatura brasileira.",
@@ -152,7 +152,7 @@ const books = [
   {
     id: 17,
     title: "Venha Ver o Pôr do Sol",
-    image: "Venha ver o por do Sol.jpeg",
+    image: "/imgLivros/Venha ver o por do Sol.jpeg",
     category: "Literatura / Clássicos",
     price: 16.90,
     description: "Contos marcantes de Lygia Fagundes Telles.",
@@ -163,7 +163,7 @@ const books = [
   {
     id: 18,
     title: "Carta de Achamento do Brasil",
-    image: "Carta de Achamento do Brasil.jpeg",
+    image: "/imgLivros/Carta de Achamento do Brasil.jpeg",
     category: "Literatura Brasileira",
     price: 15.90,
     description: "O documento histórico que narra a chegada dos portugueses ao Brasil.",
@@ -172,7 +172,7 @@ const books = [
   {
     id: 19,
     title: "Cordel - História de Jeriquaquara",
-    image: "Cordel Historia de Jeriquaquara.jpeg",
+    image: "/imgLivros/Cordel Historia de Jeriquaquara.jpeg",
     category: "Literatura Brasileira",
     price: 12.90,
     description: "Poesia de cordel contando a história de Jericoacoara.",
@@ -181,7 +181,7 @@ const books = [
   {
     id: 20,
     title: "Cordel - O Segredo do Seu Lunga",
-    image: "Cordel O Segredo do seu Lunga.jpeg",
+    image: "/imgLivros/Cordel O Segredo do seu Lunga.jpeg",
     category: "Literatura Brasileira",
     price: 12.90,
     description: "Cordel nordestino cheio de mistério e tradição.",
@@ -190,18 +190,18 @@ const books = [
   {
     id: 21,
     title: "Tributo à Sua Memória",
-    image: "Tributo a sua memoria.jpeg",
+    image: "/imgLivros/Tributo a sua memoria.jpeg",
     category: "Literatura Brasileira",
     price: 18.90,
     description: "Uma homenagem emocionante em forma literária.",
     condition: "Usado - Bom estado",
   },
 
-  // === Juvenil / Infanto-Juvenil ===
+  // === Juvenil ===
   {
     id: 22,
     title: "Meu Nome é Pedro",
-    image: "Meu Nome e Pedro.jpeg",
+    image: "/imgLivros/Meu Nome e Pedro.jpeg",
     category: "Juvenil",
     price: 16.90,
     description: "Uma história encantadora para jovens leitores.",
@@ -210,7 +210,7 @@ const books = [
   {
     id: 23,
     title: "Enquanto Estamos Crescendo",
-    image: "Enquanto Estamos Crecendo.jpeg",
+    image: "/imgLivros/Enquanto Estamos Crecendo.jpeg",
     category: "Juvenil",
     price: 18.90,
     description: "Reflexões sobre a juventude e o crescimento.",
@@ -219,7 +219,7 @@ const books = [
   {
     id: 24,
     title: "O Diário Perdido",
-    image: "O Diario Perdido.jpeg",
+    image: "/imgLivros/O Diario Perdido.jpeg",
     category: "Juvenil",
     price: 20.90,
     description: "Um diário cheio de segredos e aventuras juvenis.",
@@ -228,7 +228,7 @@ const books = [
   {
     id: 25,
     title: "O Espião",
-    image: "O espiao.jpeg",
+    image: "/imgLivros/O espiao.jpeg",
     category: "Juvenil",
     price: 19.90,
     description: "Missões secretas e ação para jovens leitores.",
@@ -237,7 +237,7 @@ const books = [
   {
     id: 26,
     title: "Pokémon Atividades",
-    image: "Pokemos Atividades.jpeg",
+    image: "/imgLivros/Pokemos Atividades.jpeg",
     category: "Juvenil",
     price: 9.90,
     description: "Livro de atividades temático Pokémon.",
@@ -246,7 +246,7 @@ const books = [
   {
     id: 27,
     title: "Karts",
-    image: "Karts.jpeg",
+    image: "/imgLivros/Karts.jpeg",
     category: "Juvenil",
     price: 10.90,
     description: "Aventuras emocionantes no mundo das corridas de kart.",
@@ -255,7 +255,7 @@ const books = [
   {
     id: 28,
     title: "Histórias Curtas",
-    image: "Historias Curtas.jpeg",
+    image: "/imgLivros/Historias Curtas.jpeg",
     category: "Juvenil",
     price: 13.90,
     description: "Coletânea de histórias curtas para jovens.",
@@ -264,7 +264,7 @@ const books = [
   {
     id: 29,
     title: "Longe como meu Querer",
-    image: "Longe como meu Querer.jpeg",
+    image: "/imgLivros/Longe como meu Querer.jpeg",
     category: "Juvenil",
     price: 17.90,
     description: "Uma história de saudade e esperança.",
@@ -273,18 +273,18 @@ const books = [
   {
     id: 30,
     title: "Shurastey",
-    image: "Shurastey.jpeg",
+    image: "/imgLivros/Shurastey.jpeg",
     category: "Juvenil",
     price: 19.90,
     description: "Uma aventura inesquecível de amizade e descobertas.",
     condition: "Usado - Bom estado",
   },
 
-  // === Autoajuda / Espiritualidade ===
+  // === Autoajuda ===
   {
     id: 31,
     title: "O Poder do Agora",
-    image: "o poder do agora.jpeg",
+    image: "/imgLivros/o poder do agora.jpeg",
     category: "Autoajuda",
     price: 28.90,
     description: "O bestseller de Eckhart Tolle sobre presença e consciência.",
@@ -293,7 +293,7 @@ const books = [
   {
     id: 32,
     title: "Poesia que Transforma",
-    image: "Poesia que Transforma.jpeg",
+    image: "/imgLivros/Poesia que Transforma.jpeg",
     category: "Autoajuda",
     price: 16.90,
     description: "Poemas que tocam a alma e transformam a visão de mundo.",
@@ -304,7 +304,7 @@ const books = [
   {
     id: 33,
     title: "Atlas Geográfico",
-    image: "Atlas Geografico.jpeg",
+    image: "/imgLivros/Atlas Geografico.jpeg",
     category: "Referência / Educação",
     price: 19.90,
     description: "Atlas completo com mapas detalhados do mundo.",
@@ -313,7 +313,7 @@ const books = [
   {
     id: 34,
     title: "Enciclopédia Brasileira",
-    image: "Enciclopedia Brasileira.jpeg",
+    image: "/imgLivros/Enciclopedia Brasileira.jpeg",
     category: "Referência / Educação",
     price: 39.90,
     description: "Enciclopédia abrangente sobre o Brasil.",
@@ -322,7 +322,7 @@ const books = [
   {
     id: 35,
     title: "Sistema Solar",
-    image: "Sistema Solar.jpeg",
+    image: "/imgLivros/Sistema Solar.jpeg",
     category: "Referência / Educação",
     price: 14.90,
     description: "Guia ilustrado sobre os planetas e o universo.",
@@ -331,7 +331,7 @@ const books = [
   {
     id: 36,
     title: "Dicionário Português",
-    image: "Dicionario- Portugues.jpeg",
+    image: "/imgLivros/Dicionario- Portugues.jpeg",
     category: "Referência / Educação",
     price: 24.90,
     description: "Dicionário completo da língua portuguesa.",
@@ -340,7 +340,7 @@ const books = [
   {
     id: 37,
     title: "Mini-Dicionário Inglês",
-    image: "Mini-Dicionario Ingles.jpeg",
+    image: "/imgLivros/Mini-Dicionario Ingles.jpeg",
     category: "Referência / Educação",
     price: 14.90,
     description: "Dicionário compacto inglês-português.",
@@ -349,7 +349,7 @@ const books = [
   {
     id: 38,
     title: "Guia de Sobrevivência na Natureza",
-    image: "Guia de Sobrevivência na Natureza.jpeg",
+    image: "/imgLivros/Guia de Sobrevivência na Natureza.jpeg",
     category: "Referência / Educação",
     price: 26.90,
     description: "Técnicas essenciais de sobrevivência ao ar livre.",
@@ -360,7 +360,7 @@ const books = [
   {
     id: 39,
     title: "Livro de Receitas Ana Maria",
-    image: "Livro de Receitas Ana Maria.jpeg",
+    image: "/imgLivros/Livro de Receitas Ana Maria.jpeg",
     category: "Culinária",
     price: 19.90,
     description: "Deliciosas receitas da apresentadora Ana Maria Braga.",
@@ -369,7 +369,7 @@ const books = [
   {
     id: 40,
     title: "Livro de Receitas Bolos",
-    image: "Livro de Receitas Bolos.jpeg",
+    image: "/imgLivros/Livro de Receitas Bolos.jpeg",
     category: "Culinária",
     price: 19.90,
     description: "As melhores receitas de bolos caseiros.",
@@ -378,7 +378,7 @@ const books = [
   {
     id: 41,
     title: "Livro de Receitas Chocolate Garoto",
-    image: "Livro de Receitas Chocolate Garoto.jpeg",
+    image: "/imgLivros/Livro de Receitas Chocolate Garoto.jpeg",
     category: "Culinária",
     price: 18.90,
     description: "Receitas deliciosas com chocolate Garoto.",
@@ -387,7 +387,7 @@ const books = [
   {
     id: 42,
     title: "Livro de Receitas Cozinha Internacional",
-    image: "Livro de Receitas Cozinha Internacional.jpeg",
+    image: "/imgLivros/Livro de Receitas Cozinha Internacional.jpeg",
     category: "Culinária",
     price: 19.90,
     description: "Pratos de todo o mundo na sua cozinha.",
@@ -396,7 +396,7 @@ const books = [
   {
     id: 43,
     title: "Livro de Receitas Docinhos",
-    image: "Livro de Receitas Docinhos.jpeg",
+    image: "/imgLivros/Livro de Receitas Docinhos.jpeg",
     category: "Culinária",
     price: 17.90,
     description: "Receitas de docinhos para festas e comemorações.",
@@ -405,7 +405,7 @@ const books = [
   {
     id: 44,
     title: "Livro de Receitas Mondial",
-    image: "Livro de Receitas Mondial.jpeg",
+    image: "/imgLivros/Livro de Receitas Mondial.jpeg",
     category: "Culinária",
     price: 16.90,
     description: "Receitas práticas para o dia a dia.",
@@ -414,7 +414,7 @@ const books = [
   {
     id: 45,
     title: "Livro de Receitas Musse e Pavê",
-    image: "Livro de Receitas Musse e Pave.jpeg",
+    image: "/imgLivros/Livro de Receitas Musse e Pave.jpeg",
     category: "Culinária",
     price: 17.90,
     description: "Sobremesas cremosas e irresistíveis.",
@@ -423,7 +423,7 @@ const books = [
   {
     id: 46,
     title: "Livro de Receitas Ofélia",
-    image: "Livro de Receitas Ofelia.jpeg",
+    image: "/imgLivros/Livro de Receitas Ofelia.jpeg",
     category: "Culinária",
     price: 19.90,
     description: "O clássico livro de receitas da Ofélia.",
@@ -432,7 +432,7 @@ const books = [
   {
     id: 47,
     title: "Livro de Receitas Pizza",
-    image: "Livro de Receitas Pizza.jpeg",
+    image: "/imgLivros/Livro de Receitas Pizza.jpeg",
     category: "Culinária",
     price: 18.90,
     description: "Todas as variações de pizza para fazer em casa.",
@@ -441,21 +441,22 @@ const books = [
   {
     id: 48,
     title: "Livro de Receitas Tortas Geladas",
-    image: "Livro de Receitas Tortas Geladas.jpeg",
+    image: "/imgLivros/Livro de Receitas Tortas Geladas.jpeg",
     category: "Culinária",
     price: 17.90,
     description: "Tortas geladas deliciosas para qualquer ocasião.",
     condition: "Usado - Bom estado",
   },
-      {
+  // === Fantasia / Aventura ===
+  {
     id: 49,
-    title: "Harry Potter - Serie Completa",
+    title: "Harry Potter - Série Completa",
     image: "/imgLivros/Harry-Potter Serie Completa.jpeg",
-    category: "Fantasia/Aventura",
+    category: "Fantasia / Aventura",
     price: 229.90,
     description: "Aventuras mágicas no mundo dos bruxos.",
     condition: "Usado - Bom estado",
   },
 ];
 
-module.exports = books;
+export default books;
