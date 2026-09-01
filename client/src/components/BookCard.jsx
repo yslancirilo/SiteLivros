@@ -11,7 +11,7 @@ export default function BookCard({ book, onBuyClick, onBookClick }) {
       {/* Book cover */}
       <button
         className="card-img-btn"
-        onClick={() => onBookClick(book)}
+        onClick={() => !book.sold && onBookClick(book)}
         aria-label={`Ver detalhes de ${book.title}`}
       >
         {imgError ? (
@@ -36,7 +36,7 @@ export default function BookCard({ book, onBuyClick, onBookClick }) {
       <div className="card-body">
         <button
           className="card-title-btn"
-          onClick={() => onBookClick(book)}
+          onClick={() => !book.sold && onBookClick(book)}
           aria-label={`Ver detalhes de ${book.title}`}
         >
           {book.title}

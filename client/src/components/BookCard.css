@@ -171,7 +171,11 @@
   text-transform: uppercase;
 }
 
-/* Disabled buy button */
+.book-card:has(.sold-overlay) .card-img-btn,
+.book-card:has(.sold-overlay) .card-title-btn {
+  cursor: default;
+  pointer-events: none;
+}
 .btn-disabled {
   background: #aaa !important;
   cursor: not-allowed;
