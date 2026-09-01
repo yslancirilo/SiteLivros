@@ -447,6 +447,15 @@ const books = [
     description: "Tortas geladas deliciosas para qualquer ocasião.",
     condition: "Usado - Bom estado",
   },
+      {
+    id: 49,
+    title: "Harry Potter - Serie Completa",
+    image: "/imgLivros/Harry-Potter Serie Completa.jpeg",
+    category: "Fantasia/Aventura",
+    price: 229.90,
+    description: "Aventuras mágicas no mundo dos bruxos.",
+    condition: "Usado - Bom estado",
+  },
 ];
 
 export default books;
