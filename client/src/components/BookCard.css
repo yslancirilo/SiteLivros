@@ -143,3 +143,40 @@
   outline: 2px solid #ff9900;
   outline-offset: 2px;
 }
+
+/* Sold overlay */
+.card-img-btn {
+  position: relative;
+}
+
+.sold-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sold-badge {
+  background: #c0392b;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding: 8px 24px;
+  transform: rotate(-30deg);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  text-transform: uppercase;
+}
+
+/* Disabled buy button */
+.btn-disabled {
+  background: #aaa !important;
+  cursor: not-allowed;
+}
+
+.btn-disabled:hover {
+  background: #aaa !important;
+}

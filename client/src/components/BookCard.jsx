@@ -25,6 +25,11 @@ export default function BookCard({ book, onBuyClick, onBookClick }) {
             onError={() => setImgError(true)}
           />
         )}
+        {book.sold && (
+          <div className="sold-overlay" aria-label="Livro vendido">
+            <span className="sold-badge">VENDIDO</span>
+          </div>
+        )}
       </button>
 
       {/* Info */}
@@ -50,12 +55,13 @@ export default function BookCard({ book, onBuyClick, onBookClick }) {
 
         {/* WhatsApp CTA */}
         <button
-          className="btn-whatsapp"
-          onClick={() => onBuyClick(book)}
-          aria-label={`Comprar ${book.title} pelo WhatsApp`}
+          className={`btn-whatsapp${book.sold ? " btn-disabled" : ""}`}
+          onClick={() => !book.sold && onBuyClick(book)}
+          disabled={book.sold}
+          aria-label={book.sold ? `${book.title} já foi vendido` : `Comprar ${book.title} pelo WhatsApp`}
         >
           <WhatsAppIcon />
-          Comprar pelo WhatsApp
+          {book.sold ? "Indisponível" : "Comprar pelo WhatsApp"}
         </button>
       </div>
     </article>

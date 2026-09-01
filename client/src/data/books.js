@@ -45,6 +45,7 @@ const books = [
     price: 24.90,
     description: "Um mistério envolvente que desafia a mente.",
     condition: "Usado - Bom estado",
+    sold: true,
   },
   {
     id: 6,
