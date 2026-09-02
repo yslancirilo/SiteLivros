@@ -140,6 +140,7 @@ const books = [
     price: 21.90,
     description: "O famoso caso de Sherlock Holmes com o misterioso cão.",
     condition: "Usado - Bom estado",
+    sold: true,
   },
   {
     id: 16,
@@ -234,6 +235,7 @@ const books = [
     price: 19.90,
     description: "Missões secretas e ação para jovens leitores.",
     condition: "Usado - Bom estado",
+    sold: true,
   },
   {
     id: 26,
