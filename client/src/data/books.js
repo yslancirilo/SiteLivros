@@ -1,5 +1,16 @@
 // Catálogo de livros — dados estáticos para o frontend
 const books = [
+  // === Fantasia / Aventura ===
+  {
+    id: 49,
+    title: "Harry Potter - Série Completa",
+    image: "/imgLivros/Harry-Potter Serie Completa.jpeg",
+    category: "Fantasia / Aventura",
+    price: 229.90,
+    description: "Aventuras mágicas no mundo dos bruxos.",
+    condition: "Usado - Bom estado",
+  },
+
   // === Ficção / Aventura ===
   {
     id: 1,
@@ -449,16 +460,6 @@ const books = [
     category: "Culinária",
     price: 17.90,
     description: "Tortas geladas deliciosas para qualquer ocasião.",
-    condition: "Usado - Bom estado",
-  },
-  // === Fantasia / Aventura ===
-  {
-    id: 49,
-    title: "Harry Potter - Série Completa",
-    image: "/imgLivros/Harry-Potter Serie Completa.jpeg",
-    category: "Fantasia / Aventura",
-    price: 229.90,
-    description: "Aventuras mágicas no mundo dos bruxos.",
     condition: "Usado - Bom estado",
   },
 ];
