@@ -245,6 +245,7 @@ const books = [
     price: 9.90,
     description: "Livro de atividades temático Pokémon.",
     condition: "Usado - Bom estado",
+    sold: true,
   },
   {
     id: 27,
