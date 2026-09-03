@@ -360,6 +360,7 @@ const books = [
     price: 14.90,
     description: "Dicionário compacto inglês-português.",
     condition: "Usado - Bom estado",
+    sold: true,
   },
   {
     id: 38,
